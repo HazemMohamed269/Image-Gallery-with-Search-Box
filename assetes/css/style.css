@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container .box-search {
+    margin: 0 auto;
+    height: 42px;
+    max-width: 400px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.box-search i {
+    position: absolute;
+    z-index: 5;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.box-search input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #323334;
+    padding: 0 15px 0 45px;
+    transition: .2s;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: rgba(234, 76, 137, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.images .box-image{
+    margin: 8px;
+}
+
+.container .images .box-image{
+    position: relative;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .box-image img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.2s linear;
+}
+
+.box-image:hover img{
+    transform: scale(1.1);
+}
+
+.box-image h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #767575;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.container hr{
+    color: #eee;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container h2{
+    color: #323334;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
